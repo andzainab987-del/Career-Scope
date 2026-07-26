@@ -1,6 +1,6 @@
 # 🚀 CareerScope AI — Next-Gen AI Career Intelligence Platform
 
-> **Live Application**: [https://career-scope-ai.vercel.app](https://career-scope-ai.vercel.app)  
+> **Live Application**: [https://career-scope-phi.vercel.app](https://career-scope-phi.vercel.app)  
 > **GitHub Repository**: [https://github.com/andzainab987-del/Career-Scope.git](https://github.com/andzainab987-del/Career-Scope.git)
 
 ---
@@ -20,7 +20,7 @@ Students and early-career professionals in emerging markets (particularly South 
 
 ## 🔗 Live Deployment & Repository
 
-- **Live URL**: [https://career-scope-ai.vercel.app](https://career-scope-ai.vercel.app)
+- **Live URL**: [https://career-scope-phi.vercel.app](https://career-scope-phi.vercel.app)
 - **Public GitHub Repo**: [https://github.com/andzainab987-del/Career-Scope.git](https://github.com/andzainab987-del/Career-Scope.git)
 
 ---
