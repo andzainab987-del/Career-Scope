@@ -1,38 +1,64 @@
-# 🌌 CareerScope AI — 2026 Premium Career Guidance Platform
+# 🚀 CareerScope AI — Next-Gen AI Career Intelligence Platform
 
-**CareerScope AI** is a production-ready, high-performance web application designed to empower students and job seekers across **Technology**, **Engineering**, and **Aviation** to discover, analyze, and map out their future career pathways using artificial intelligence.
-
----
-
-## 🚀 Key Features
-
-- **21st-Century Gradient Aesthetic**: Dark mode base with deep indigo, electric cyan, and teal glowing radial mesh backgrounds, glassmorphism cards, and interactive hover shifts.
-- **12 Comprehensive Career Fields**: In-depth coverage across Software Engineering, AI & Data Science, Cybersecurity, Cloud & DevOps, Electrical Engineering, Mechanical Engineering, Civil Infrastructure, Biomedical Engineering, Commercial Piloting, Aerospace Engineering, Air Traffic Control, and Aviation Management.
-- **Career Compass AI Counselor**: Multi-step interactive assessment quiz + real-time conversational chat powered by Groq's high-speed `llama-3.3-70b-versatile` LLM.
-- **South Asian & Global Market Benchmarking**: Tailored for FAST, NUST, LUMS, GIKI, UET, and IST graduates, comparing local PKR/INR salary bands with remote USD international packages.
-- **Skill Gap Roadmaps**: Detailed breakdown of top universities, industry certifications (AWS, OSCP, CPL/PPL, CKA), pros & cons, and future automation risks.
-- **Frictionless Local Storage Profile**: Bookmark favorite fields and persist quiz recommendations without forcing registration.
+> **Live Application**: [https://career-scope-ai.vercel.app](https://career-scope-ai.vercel.app)  
+> **GitHub Repository**: [https://github.com/andzainab987-del/Career-Scope.git](https://github.com/andzainab987-del/Career-Scope.git)
 
 ---
 
-## 🛠️ Technology Stack
+## 📌 Problem Statement & Target Audience
 
-| Layer | Technology |
-|---|---|
-| **Framework** | Next.js 15 (App Router, Server API Routes) |
-| **Language** | TypeScript (Strict Typing) |
-| **Styling** | Tailwind CSS v4 + custom gradient utility engine |
-| **UI Components** | shadcn/ui + Lucide Icons |
-| **Animations** | Framer Motion & CSS keyframes |
-| **AI Inference** | Groq SDK (`llama-3.3-70b-versatile`) |
-| **State & Persistence** | React Custom Hooks & Browser `localStorage` |
+### The Real Problem
+Students and early-career professionals in emerging markets (particularly South Asia, e.g., Pakistan, India, Bangladesh) face severe **information asymmetry** when choosing career paths in Technology, Engineering, and Aviation:
+1. **Unrealistic & Vague Salary Information**: Most online career portals quote generic Western salaries that do not reflect local realities (PKR/INR) vs global remote USD roles.
+2. **Lack of Practical Roadmaps**: Standard university prospectuses fail to provide actionable skill-gap roadmaps, open-source portfolio milestones, or realistic accreditation requirements (PEC, ICAO, OSCP, AWS).
+3. **AI Disruption Anxiety**: Students struggle to identify which engineering and aviation roles are resilient against AI automation versus those at risk.
+
+### The Solution
+**CareerScope AI** is a complete, end-to-end, AI-powered career intelligence platform built to bridge this gap. It combines high-performance 3D visualization, interactive orbital career timelines, precise dual-tier salary benchmarking, and customized AI counseling powered by **Groq LLM (`llama-3.3-70b-versatile`)**.
 
 ---
 
-## 🤖 System Prompt Documentation
+## 🔗 Live Deployment & Repository
 
-The AI system prompt used in `/api/chat/route.ts` is calibrated specifically for career counseling:
+- **Live URL**: [https://career-scope-ai.vercel.app](https://career-scope-ai.vercel.app)
+- **Public GitHub Repo**: [https://github.com/andzainab987-del/Career-Scope.git](https://github.com/andzainab987-del/Career-Scope.git)
 
+---
+
+## ✨ Features & Capability Overview
+
+### 1. 🌌 21st.dev Interactive Radial Orbital Timeline
+- Custom 360-degree rotating orbital map visualizing career progression from entry-level positions to senior leadership.
+- Dynamic popovers with smart vertical positioning to prevent clipping.
+- Interactive node connections showing related career transition pathways.
+
+### 2. ⚡ 3D WebGPU Futuristic Hero Experience
+- Hyper-minimalist 2026-style interface powered by Three.js WebGPU shaders and bloom post-processing.
+- Real-time ray-marched mesh distortion responding to cursor movement and scroll position.
+
+### 3. 🎯 12+ Specialized Career Directories
+Comprehensive field intelligence across three core sectors:
+- **Technology**: Software Engineering, Data Science & AI, Cybersecurity & Defense, Cloud & DevOps.
+- **Engineering**: Electrical & Microelectronics, Mechanical & Robotics, Civil & Infrastructure, Biomedical Engineering.
+- **Aviation**: Commercial Aviation & Piloting, Aerospace & Avionics, Air Traffic Control, Airport Operations & Management.
+
+### 4. 💰 Dual Salary Benchmarking (Local vs International Remote)
+- Compares local monthly salaries (PKR/INR) with international remote annual packages (USD) across Entry, Mid, and Senior career stages.
+
+### 5. 🎓 Educational Pathways & Institution Mapping
+- Direct guidance on accredited degree programs (FAST, NUST, LUMS, GIKI, UET, IST, Air University, etc.) alongside industry certifications (AWS, OSCP, CKA, PPL/CPL).
+
+### 6. 🤖 Career Compass AI Advisor
+- Interactive 3-step quiz analyzing user interests, academic background, and work preferences to stream personalized career recommendations via Groq.
+
+---
+
+## 🧠 AI Integration & System Prompt Architecture
+
+### AI Engine: Groq LLaMA-3.3 70B Versatile
+The AI feature is integrated into `/api/chat` using the **Groq SDK** to deliver ultra-fast streaming career counseling tailored for South Asian and global students.
+
+### System Prompt (`src/lib/ai-prompt.ts`)
 ```typescript
 export const SYSTEM_PROMPT = `You are CareerScope AI, an elite career counselor and industry advisor specializing in helping students and early-career professionals (with special context for South Asian students, e.g. Pakistan, India, Bangladesh).
 
@@ -40,77 +66,90 @@ Your mission is to provide ultra-high-quality, empathetic, structured, and reali
 
 Guidelines:
 1. Warm & Direct Tone: Be supportive, inspiring, yet realistic about academic competition, local salaries, remote opportunities, and global markets.
-2. Structured Response: Present recommendations using formatted Markdown (Top Fields, Why It Fits, Key Challenges & Skill Gaps, Actionable Roadmap, Salary Benchmarks).
-3. Be specific: Reference actual universities (FAST, NUST, LUMS, GIKI, UET, IST, Air University), certifications (AWS, OSCP, CKA, PMP, PPL/CPL), and realistic salary bands.`;
+2. Structured Response: When asked for recommendations or analyzing quiz input, present your response clearly using formatted Markdown with key headings:
+   - 🌟 Top Recommended Fields (Match % + Core Reasoning)
+   - 💡 Why It Fits Your Profile
+   - ⚠️ Key Challenges & Skill Gaps to Address
+   - 🚀 Actionable Roadmap (Education, Certifications & Hands-on Projects)
+   - 💰 Market Outlook & Salary Potential (Local vs Remote/International)
+3. Be specific: Reference actual universities (like FAST, NUST, LUMS, GIKI, UET, IST, Air University, etc.), certifications (AWS, OSCP, CKA, PMP, PPL/CPL), technologies, and realistic salary bands.
+4. Encourage growth: Always emphasize that skill mastery and practical project portfolios outweigh simple degree titles.
+
+Answer directly, professionally, and concisely without generic filler.`;
 ```
 
 ---
 
-## ⚡ Quick Start & Run Instructions
+## 🛠️ Tech Stack & Services Used
+
+| Component | Technology / Service |
+| :--- | :--- |
+| **Framework** | Next.js 16 (App Router & Turbopack) |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS & Custom CSS Design Tokens |
+| **3D Engine** | Three.js, React Three Fiber & Three WebGPU |
+| **Icons** | Lucide React |
+| **AI LLM** | Groq API (`llama-3.3-70b-versatile`) |
+| **Hosting** | Vercel |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 📸 Screenshots & Visual Walkthrough
+
+### 1. 3D WebGPU Hero Section (`DISCOVER YOUR FUTURE`)
+![Hero Section Screenshot](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200)
+*Interactive 3D WebGPU mesh with monochrome high-contrast typography.*
+
+### 2. 21st.dev Radial Orbital Timeline
+![Radial Orbital Timeline Screenshot](https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200)
+*Rotating orbital career trajectory map with smart popover positioning.*
+
+### 3. Career Compass AI Counseling Chat Interface
+![AI Career Compass Screenshot](https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=1200)
+*Real-time streaming Groq AI career advisor with 3-step quiz flow.*
+
+---
+
+## 💻 Local Setup & Development Instructions
 
 ### Prerequisites
-- Node.js 18.x or higher
+- Node.js 18.x or 20.x
 - npm or pnpm
 
-### 1. Clone & Install Dependencies
+### Step 1: Clone the Repository
 ```bash
-cd career-scope
+git clone https://github.com/andzainab987-del/Career-Scope.git
+cd Career-Scope/career-scope
+```
+
+### Step 2: Install Dependencies
+```bash
 npm install
 ```
 
-### 2. Configure Environment Variables
-Create a `.env.local` file in the root directory:
+### Step 3: Configure Environment Variables
+Create a `.env.local` file in the root of `career-scope`:
 ```env
 GROQ_API_KEY=gsk_your_groq_api_key_here
 ```
-*(Get a free Groq key at [console.groq.com](https://console.groq.com))*
 
-### 3. Run Development Server
+### Step 4: Run the Development Server
 ```bash
 npm run dev
 ```
-Open `http://localhost:3000` in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app!
 
----
-
-## ➕ How to Add New Career Fields
-
-To add a new career field to the platform:
-
-1. Open `src/data/fields.ts`.
-2. Add a new object conforming to the `CareerField` interface:
-
-```typescript
-{
-  slug: "quantum-computing",
-  name: "Quantum Computing & Information",
-  category: "Technology",
-  icon: "Cpu",
-  color: "from-purple-500 via-pink-500 to-cyan-500",
-  shortDesc: "Develop quantum algorithms and hardware for next-generation computing.",
-  longExplanation: "...",
-  keySkills: ["Qiskit", "Quantum Physics", "Linear Algebra", "Python"],
-  topCareers: [...],
-  salaryRange: {
-    local: { entry: "PKR 150K/mo", mid: "PKR 400K/mo", senior: "PKR 900K+/mo", currency: "PKR" },
-    international: { entry: "$95K/yr", mid: "$150K/yr", senior: "$250K+/yr", currency: "USD" }
-  },
-  pros: [...],
-  cons: [...],
-  educationPaths: [...],
-  futureOutlook: {...},
-  relatedFields: ["software-engineering", "data-science-ai"]
-}
+### Step 5: Test Production Build
+```bash
+npm run build
+npm run start
 ```
-3. Save the file. The field will automatically appear in the Explore Directory, Search Filters, dynamic `/fields/[slug]` pages, and AI context!
 
 ---
 
-## 📦 Vercel Deployment
+## 👤 Author & Project Info
 
-This repository is pre-configured for instant zero-config deployment on Vercel:
-
-1. Push code to GitHub.
-2. Import project into Vercel dashboard.
-3. Add `GROQ_API_KEY` under Environment Variables.
-4. Click **Deploy**.
+- **Developer**: Zainab
+- **GitHub**: [@andzainab987-del](https://github.com/andzainab987-del)
+- **License**: MIT
