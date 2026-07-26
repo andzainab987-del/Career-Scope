@@ -98,15 +98,15 @@ Answer directly, professionally, and concisely without generic filler.`;
 ## 📸 Screenshots & Visual Walkthrough
 
 ### 1. 3D WebGPU Hero Section (`DISCOVER YOUR FUTURE`)
-![Hero Section Screenshot](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200)
+![Hero Section Screenshot](public/screenshots/hero.png)
 *Interactive 3D WebGPU mesh with monochrome high-contrast typography.*
 
 ### 2. 21st.dev Radial Orbital Timeline
-![Radial Orbital Timeline Screenshot](https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200)
+![Radial Orbital Timeline Screenshot](public/screenshots/timeline.png)
 *Rotating orbital career trajectory map with smart popover positioning.*
 
 ### 3. Career Compass AI Counseling Chat Interface
-![AI Career Compass Screenshot](https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=1200)
+![AI Career Compass Screenshot](public/screenshots/compass.png)
 *Real-time streaming Groq AI career advisor with 3-step quiz flow.*
 
 ---
